@@ -40,10 +40,36 @@ These are some useful XCode shortcuts that'll surely make it easier to work, onl
 - Inside your storyboard you want refactored, select the views you want, go to _**Editor > Refactor**_ to Storyboard. A neat little popup will appear where you just type the name of the new storyboard file, and XCode automagically creates a new storyboard file, and links it in your "old" storyboard.
 
 ### Track how long your build takes
-Just type the following line in your terminal, and each time you build your projects, XCode will show how long your build takes
+- Just type the following line in your terminal, and each time you build your projects, XCode will show how long your build takes
+`````
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool YES
+`````
+
+### Placeholder func name
+- Whenever you don't know what to name your function, don't just name it saying you'll refactor it later. We all know that **won't** happen. So, what you can do is just type:
+    ````
+    func <#functionPlaceholderName#>()
+    ````
+    and your function will be created with a placeholder name. You'll be able to continue your development, but XCode won't let you build or run your app before you name your function 
+
+### Open the Snippet / Object Library
+- Press _**cmd + shift + L**_ in your code / storyboard to open snippet / object library. If you want to persist it, press _**cmd + opt + shift + L**_
+
+### Multicursor
+- Press _**ctrl + shift + click**_ to use multicursor in your editor
+
+### Highlight just a collumn
+- _**opt + drag**_ to highlight the collumn that you want in your code
+
+### Force warning / errors
+- Use 
     ```
-    defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool YES
+    #warning("")
+    or
+    #error("")
     ```
+    to force a warning / error in your code
+
 
 
 
