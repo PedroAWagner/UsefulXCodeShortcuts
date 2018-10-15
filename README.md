@@ -1,4 +1,4 @@
-# UsefulXCodeShortcuts
+# Useful XCode Shortcuts
 These are some useful XCode shortcuts that'll surely make it easier to work, only using your keyboard :)
 
 (These are in no particular order, just wrote them as I found them)
